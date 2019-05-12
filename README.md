@@ -38,13 +38,22 @@ A project is based on a Project Template, which defines
   <li>PM creates new Baselines as required. </li>
   <li>PM approves working Baseline, from now on status will be measured against this baseline</li>
   <li>PM creates new working Baseline, updates to Artifacts will be recorded under this baseline</li>
-  <li>At planned end date of each phase:</li>
-    PMView presents
-      PM GOC
-      Project KPI
-    PM conducts Gate Review
-      System creates Gate Review objects as per LCM/PM Schedule
-    PM closes phase
+  <li>At planned end date of each phase:
+    <ul>
+      <li>PMView presents
+          <ul>
+            <li>PM GOC</li>
+            <li>Project KPI</li>
+          </ul>
+      </li>
+      <li>PM conducts Gate Review
+          <ul>
+            <li>System creates Gate Review objects as per LCM/PM Schedule</li>
+          </ul>
+      </li>
+      <li>PM closes phase</li>
+    </ul>
+    </li>
 </ul>
 
 <h2 id="goc" >GOC/KPI calculation</h2>
