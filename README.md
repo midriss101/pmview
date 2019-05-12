@@ -2,27 +2,55 @@
 Textbook PMBOK-based project management
 
 <a href="#project_model">Project Model</a><br>
-<a href="">The life cycle of a project in PMView</a><br>
-<a href="">GOC/KPI calculation</a><br>
-<a href="">Baselines and Revisions</a><br>
-<a href="">Planning Tool Integration</a><br>
-<a href="">Managing Project Changes</a><br>
+<a href="#lifecycle">The life cycle of a project in PMView</a><br>
+<a href="#goc">GOC/KPI calculation</a><br>
+<a href="#baselines">Baselines and Revisions</a><br>
+<a href="#planning_tools">Planning Tool Integration</a><br>
+<a href="#cm">Managing Project Changes</a><br>
 
 <h2 id="project_model">Project Model</h2>
 A project is based on a Project Template, which defines
-PM Process Model
-Life Cycle Model
-How these two map to each other
-Artifact Templates
-KPI
+<ul>
+  <li>PM Process Model</li>
+  <li>Life Cycle Model</li>
+  <li>How these two map to each other</li>
+  <li>Artifact Templates</li>
+  <li>KPI</li>
+</ul>
 
-<h2>The life cycle of a project in PMView</h2>
-Project is created from a Project Template
-Preliminary LCM/PM WBS & Schedule is created during project creation
-Initial Baseline is setup by the system
-PM proceeds to progress PM deliverables from Phase View
+<h2 id="lifecycle">The life cycle of a project in PMView</h2>
+<ul>
+  <li>A Project is created from a Project Template</li>
+  <li>Preliminary LCM/PM WBS & Schedule is created during project creation</li>
+  <li>Initial Baseline is setup by the system</li>
+  <li>PM proceeds to progress PM deliverables from Phase View</li>
+  <li>As PM works on outputs of each process, PM GOC is calculated as per below description.</li>
+  <li>When the project is ready to be baselined:
+    <ul>
+      <li>PM approves initial Baseline, status will be measured against this baseline</li>
+      <li>System creates new working Baseline, updates to Artifacts will be recorded under this baseline</li>
+      <li>PM maps LCM to Project WBS</li>
+      <li>LCM/PM WBS & Schedule is updated according to LCM/Project WBS mapping</li>
+    </ul>
+  </li>
+  <li>Status against current baseline is updated into PMView as per following section.</li>
+  <li>System generates Change Request candidates according to updated status.</li>
+  <li>PM creates new Baselines as required. </li>
+  <li>PM approves working Baseline, from now on status will be measured against this baseline</li>
+  <li>PM creates new working Baseline, updates to Artifacts will be recorded under this baseline</li>
+  <li>At planned end date of each phase:</li>
+    PMView presents
+      PM GOC
+      Project KPI
+    PM conducts Gate Review
+      System creates Gate Review objects as per LCM/PM Schedule
+    PM closes phase
+</ul>
 
-<h2>GOC/KPI calculation</h2>
-<h2>Baselines and Revisions</h2>
-<h2>Planning Tool Integration</h2>
-<h2>Managing Project Changes</h2>
+<h2 id="goc" >GOC/KPI calculation</h2>
+
+<h2 id="baselines">Baselines and Revisions</h2>
+
+<h2 id="planning_tools">Planning Tool Integration</h2>
+
+<h2 id="cm">Managing Project Changes</h2>
