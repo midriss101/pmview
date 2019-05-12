@@ -102,3 +102,36 @@ A project is based on a Project Template, which defines
 </ul>
   
 <h2 id="cm">Managing Project Changes</h2>
+A CR can be associated to
+<ul>
+  <li>Requirement: Requirement Entry to be created when filling CR form</li>
+  <li>WBS: If CR delivery planning results in creating new WBS entry/entries, this/these can be associated to CR</li>
+</ul>
+
+<h3>Life Cycle of a CR</h3>
+<ul>
+  <li>A CR is created:
+    <ul>
+      <li>From "Status Analysis" Panel for each PT KA, i.e. control processes</li>
+      <li>New Requirement or update of existing Requirement</li>
+    </ul>
+  </li>
+  <li>PM creates new CR Delivery Plan
+    <ul>
+      <li>PM selects any number of CR to include in CRDP</li>
+      <li>Using PTIM, PM generates CR Artifacts (incl. Activity Estimates Sc 1)</li>
+      <li>System copies project Artifacts latest baseline as CR Artifacts</li>
+    </ul>
+  </li>
+  <li>PM refines plan as needed, and creates new Estimation Scenarios if required
+    <ul>
+      <li>Each CR Estimation Scenario provides delta data</li>
+      <li>PM marks CRDP as Ready For Approval</li>
+    </ul>
+  </li>
+  <li>PM marks CR as approved
+    <ul>
+      <li>System converts CR Artifacts as new revisions of <Project/PM/IR/SE/RM> Artifacts and approves interim baseline.</li>
+    </ul>
+  </li>
+</ul>
