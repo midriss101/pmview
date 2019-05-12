@@ -57,9 +57,48 @@ A project is based on a Project Template, which defines
 </ul>
 
 <h2 id="goc" >GOC/KPI calculation</h2>
+<ul>
+  <li>Project GOC/KPI is read from (baselined) PT file.</li>
+  <li>PM GOC is determined per PM Process/ output Artifact, PM GOC is calculated as follows - and written to PT file
+    <ul>
+      <li>25% GOC when PM starts to work on an output Artifact</li>
+      <li>50% GOC when PM marks output Artifact as Ready For Review</li>
+      <li>51% - 100% as each reviewer passes output Artifact - depending on number of reviewers. There is only one approver in PMView 1.1 Practitioner Edition: PM.</li>
+    </ul>
+  </li>
+  <li>Phase GOC is aggregated from PM Process GOC, as per LCM/Process Groups Mapping</li>
+</ul>
 
 <h2 id="baselines">Baselines and Revisions</h2>
+<ul>
+  <li>Interim Baseline is created at project creation, comprised of an Interim Revision for each Artifact.</li>
+  <li>An Interim Revision can be edited until it is approved. Once approved, it becomes an Approved Revision, and cannot be further updated. A new Interim Revision is automatically created to enable updates that will be approved in the next baseline approval.</li> 
+  <li>There is no limitation to the number of Revisions (Interim or Approved) under a specific Baseline.</li>
+  <li>When an Interim Baseline is approved, it cannot be edited anymore and becomes an Approved Baseline. Only Interim Baselines can be edited. All (latest) Revisions associated to the Baseline are automatically approved.</li>
+  <li>When PM updates status, new revisions of concerned artifacts are created under latest Approved Baseline.</li>
+</ul>
 
 <h2 id="planning_tools">Planning Tool Integration</h2>
-
+<ul>
+  <li>PTIM integrates PMView to Planning Tools, and manages a set of Artifacts: PT Artifacts, which are:
+    <ul>
+      <li>WBS</li>
+      <li>Schedule</li>
+      <li>Activity List and Milestone List</li>
+      <li>Activity Cost Estimates</li>
+      <li>Activity Cost Elements</li>
+    </ul>
+  </li>
+  <li>This applies to the following:
+    <ul>
+      <li>Project (Project Work)</li>
+      <li>Project Management</li>
+      <li>Risk Mitigation</li>
+      <li>Issue Resolution</li>
+      <li>Stakeholder Engagement</li>
+      <li>Communication & Actions</li>
+    </ul>
+  </li>
+</ul>
+  
 <h2 id="cm">Managing Project Changes</h2>
